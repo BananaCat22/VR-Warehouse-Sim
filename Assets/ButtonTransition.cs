@@ -7,11 +7,12 @@ public class ButtonTransition : MonoBehaviour
 {
     
     public Button mybutton;
+    public string nextScene;
     public void Start(){
         mybutton.onClick.AddListener(Load);
     }
     public void Load()
     {
-        SceneManager.LoadScene("SettingScene");
+        SceneManager.LoadScene(nextScene);
     }
 }

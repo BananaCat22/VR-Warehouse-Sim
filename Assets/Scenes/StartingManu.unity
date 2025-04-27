@@ -249,6 +249,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mybutton: {fileID: 2027090757}
+  nextScene: StartingMenu
 --- !u!1 &207981345
 GameObject:
   m_ObjectHideFlags: 0
@@ -732,6 +733,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mybutton: {fileID: 0}
+  nextScene: 
 --- !u!1 &2032579818
 GameObject:
   m_ObjectHideFlags: 0
