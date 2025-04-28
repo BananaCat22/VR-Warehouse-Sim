@@ -6,8 +6,9 @@ public class SurveyBehavior : MonoBehaviour
 {
     public InputField input1;
     public InputField input2;
-    int response1;
-    int response2;
+    int response1=0;
+    int response2=0;
+    int responseTotal=0;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -20,12 +21,12 @@ public class SurveyBehavior : MonoBehaviour
     void SubmitResponse1(string arg0)
     {
         response1=int.Parse(arg0);
-        Debug.Log(response1);
+        responseTotal=response1+response2;
     }
     void SubmitResponse2(string arg0)
     {
         response2=int.Parse(arg0);
-        Debug.Log(response2);
+        responseTotal=response1+response2;
     }
        
 }
